@@ -1,3 +1,21 @@
+/*
+Colors
+Background- #FAFAFA;
+User- name : #404040;
+Navbar-white
+border gray
+
+*/
+
+
+/***************/
+
+
+/***GENERAL******/
+
+
+/***************/
+
 * {
     margin: 0 auto;
     padding: 0 auto;
@@ -8,8 +26,8 @@ body,
 html {
     margin: 0 auto;
     padding: 0 auto;
-    font-size: 16px;
-    background-color: gray;
+    font-size: 14px;
+    background-color: #FAFAFA;
 }
 
 h1 {
@@ -21,10 +39,291 @@ h2 {
     font-size: 140%;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .fa {
     color: black;
 }
 
+.container {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.row {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/***************/
+
+
+/***HEADER NAV******/
+
+
+/***************/
+
+header {
+    margin-bottom: 50px;
+}
+
 nav {
-    height: 10vh;
+    border-bottom: 0.5px solid #e6e6e6;
+    background-color: white;
+    text-align: center;
+    height: 70px;
+}
+
+nav ul {
+    margin: 0 auto;
+    padding-top: 13px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+    width: 32%;
+}
+
+a .fa-instagram,
+a .fa-user {
+    font-size: 250%;
+    margin: 0 auto;
+}
+
+.fa-instagram {
+    float: left;
+}
+
+.fa-user {
+    float: right;
+}
+
+
+/***************/
+
+
+/***Form******/
+
+
+/***************/
+
+.btn-main-search {
+    margin: 0 auto;
+    border: 0.2px solid #e6e6e6;
+    background-color: #FAFAFA;
+}
+
+.form-btns {
+    background-color: #FAFAFA;
+    padding: 5px 0;
+}
+
+input[type=text] .search-box {
+    background-color: #FAFAFA;
+    display: inline-block;
+    width: 80%;
+    border: none;
+    height: 100%;
+    padding: 6px 6px;
+    font-style: italic;
+    font-size: 14px;
+    float: right;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+button {
+    display: inline-block;
+    float: left;
+    width: 9%;
+    padding-bottom: 6px;
+    font-size: 14px;
+    background-color: #FAFAFA;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+button .fa-search {
+    color: gray;
+    padding: 6px 6px;
+}
+
+a .fa-times {
+    float: right;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 2px;
+    padding: 4px 5px;
+    margin-right: 4px;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid black;
+    background-color: gray;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.off {
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/***************/
+
+
+/***Card******/
+
+
+/***************/
+
+.card {
+    margin-top: 55px;
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+    border: 0.5px solid #e6e6e6;
+    padding-bottom: 15px;
+}
+
+.profile-box {
+    text-align: center;
+    display: block;
+    height: 60px;
+    padding: 15px 25px;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
+.profile-name {
+    font-size: 14px;
+    color: #262626;
+    font-weight: 700;
+    display: inline-block;
+    float: left;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-stats {
+    height: 40px;
+    width: 100%;
+}
+
+.card-stats ul {
+    list-style: none;
+    height: 50px;
+    padding: 10px 10px;
+    display: block;
+}
+
+.card-stats ul li {
+    float: left;
+    display: inline-block;
+    width: 8.6%;
+    font-size: 120%;
+    padding: 4px;
+    color: #575757;
+}
+
+.card ul li:not(last-child) {
+    margin-right: 1.0%;
+}
+
+
+/***************/
+
+
+/***Comments/profile-name******/
+
+
+/***************/
+
+.profile-name {
+    padding-top: 8px;
+    padding-left: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.profile-name,
+.profile-name2,
+.profile-name3 {
+    font-size: 14px;
+    color: #262626;
+    font-weight: 700;
+}
+
+.section-comments {
+    text-align: center;
+    padding: 10px 25px;
+    margin: 0 auto;
+}
+
+.profile-name2,
+.profile-name3 {
+    display: inline-block;
+    float: left;
+    padding-right: 8px;
+}
+
+.card-description,
+.comment {
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.section-comments ul {
+    margin-top: 2px;
+    padding: 0;
+    list-style: none;
+}
+
+.input-add-comment {
+    width: 100%;
+    padding: 15px 2px;
+    font-size: 16px;
+    font-style: italic;
+    background-color: #FAFAFA;
+    border: 0.5px solid #e6e6e6;
+}
+
+.input-add-comment:focus {
+    background-color: white;
+}
+
+hr {
+    color: #FAFAFA;
+    width: 85%;
+    border: 0.2px;
+    margin: 0 auto;
 }
