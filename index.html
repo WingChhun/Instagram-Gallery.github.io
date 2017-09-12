@@ -16,26 +16,60 @@
     <!-- Header Contain navbar, brand- searchbox-->
     <header>
         <nav>
-            <ul>
-                <div class="left-nav">
-                    <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-                    <li>Insta-Search</li>
-                </div>
-                <li>
-                    <form action="/" method="POST">
-                        <input type="text" name="userName" placeholder="username">
-                        <button type="submit"> <i class="icon-user icon-white icon-search"></i>Sign in </button>
-                    </form>
-                    <!--Form to search for username, send to server-->
-                </li>
-            </ul>
+            <div class="container">
+                <ul>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li class="btn-main-search">
+                        <form action="/search" method="POST">
+                            <div class="form-btns"> <a href="#"><i class="fa fa-times  "></i></a>
+                                <input type="text" name="searchUser" placeholder="Search..." class=".search-box">
+                                <button type="submit"> <i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="user"><a href="#"><i class="fa fa-user"></i></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+    <div class="card">
+        <div class="profile-box">
+            <a href=""><img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-1/p160x160/18814001_1415558881869589_8874893706988227758_n.jpg?oh=a01f35b0d264e3c11cdf0561ac187366&oe=5A523188" class="profile-photo" alt=" ">
+                <p class="profile-name">punsy_munsy</p>
+            </a>
+        </div> <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-1/c25.6.160.160/p200x200/18893076_1407305872650809_6270316183513476011_n.jpg?oh=7737c298c1e22e3c998694d19f66569c&oe=5A1CCAB3 " alt=" " class="card-img">
+        <div class="card-stats">
+            <ul>
+                <li><span class="num-statistics">0</span></li>
+                <li><i class="fa fa-heart-o"></i> </li>
+                <li><span class="num-statistics">0</span></li>
+                <li><i class="fa fa-comment-o"></i> </li>
+            </ul>
+        </div>
+        <!-- Card-stats-->
+        <div class="section-comments"> <span class="profile-name2">punsy_munsy : </span>
+            <p class="card-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus architecto nostrum commodi a</p>
+            <!-- likes and comments go here-->
+            <ul>
+                <li>
+                    <p class="profile-name3">userBlank :</p>
+                    <p class="comment">Dude you're a meme </p>
+                </li>
+                <li>
+                    <p class="profile-name3">userBlank : </p>
+                    <p class="comment">You're a phony </p>
+                </li>
+            </ul>
+            <input type="text" class="input-add-comment" placeholder="Add a comment..."> </div>
+        <hr>
+        <!-- Section-comments-->
+    </div>
+    <!-- End of Card-->
     <!-- End of Header-->
-    <script src="https://use.fontawesome.com/e3de159a9c.js"></script>
-    <script src="vendors/js/jquery-3.2.1.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/app.js"></script>
+    <script src="https://use.fontawesome.com/e3de159a9c.js "></script>
+    <script src="vendors/js/jquery-3.2.1.min.js "></script>
+    <script src="public/js/main.js "></script>
+    <script src="js/app.js "></script>
 </body>
 
 </html>
