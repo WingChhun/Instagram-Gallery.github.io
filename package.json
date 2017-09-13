@@ -1,0 +1,30 @@
+{
+  "name": "instaapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "instagram-analytics": "^2.1.1",
+    "instagram-node": "^0.5.8",
+    "instagram-posts": "^1.0.0",
+    "instagram-profile-picture": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WingChhun/Instagram-Gallery.github.io.git"
+  },
+  "author": "james chhun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WingChhun/Instagram-Gallery.github.io/issues"
+  },
+  "homepage": "https://github.com/WingChhun/Instagram-Gallery.github.io#readme"
+}
