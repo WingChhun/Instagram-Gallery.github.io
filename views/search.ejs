@@ -1,0 +1,63 @@
+<% include partials/header %>
+  <!-- Header Contain navbar, brand- searchbox-->
+  <header>
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="/"><i class="fa fa-instagram"></i></a></li>
+          <li class="btn-main-search">
+            <form action="/search" method="POST">
+              <div class="form-btns">
+                <input type="text" name="searchUser" placeholder="Search..." class="search-box">
+                <button type="submit"> <i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </li>
+          <li class="user"><a href="/"><i class="fa fa-user"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <% posts.forEach(function(post){ %>
+
+    <div class="card">
+      <div class="profile-box">
+        <a href=""><img src="<%= user%>" class="profile-photo" alt=" ">
+                <p class="profile-name"> <%= userInfo.userName %></p>
+            </a>
+      </div> <img src="<%=post.media %> " alt=" " class="card-img">
+      <div class="card-stats">
+        <ul>
+          <li><span class="num-statistics"><%=post.likes %></span></li>
+          <li><i class="fa fa-heart-o"></i> </li>
+          <li><span class="num-statistics"><%= post.comments %></span></li>
+          <li><i class="fa fa-comment-o"></i> </li>
+        </ul>
+      </div>
+      <!-- Card-stats-->
+      <div class="section-comments"> <span class="profile-name2"><%=userInfo.userName %> : </span>
+        <p class="card-description">
+          <%=post.text %>
+        </p>
+        <!-- likes and comments go here-->
+        <!--
+        <ul>
+
+          <li>
+            <p class="profile-name3">userBlank :</p>
+            <p class="comment">Dude, I'm spamming this post </p>
+          </li>
+          <li>
+            <p class="profile-name3">userBlank : </p>
+            <p class="comment">How come no unique comments friend </p>
+          </li>
+        </ul>
+      -->
+      </div>
+      <hr>
+      <!-- Section-comments-->
+    </div>
+    <!-- End of Card-->
+    <% }); %>
+      <!-- End of Header-->
+      <% include partials/footer %>
