@@ -91,10 +91,10 @@ app.post("/search", function(req, res) {
 
       //Call instagramposts
       instagramPosts(searchUser, {
-        count: 5
+        count: 6
       }).then(posts => {
 
-
+        console.log(posts);
         //render index.ejs
         res.render("search", {
           posts: posts,
